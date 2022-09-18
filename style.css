@@ -1,0 +1,120 @@
+/*******************
+ ###**Resete 
+ ******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/*******************
+ ###**Geral 
+ ******************/
+body {
+  font-family: "Inter", sans-serif;
+  background: #121214 url(./img/Fundo.jpg) no-repeat top center / contain;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  max-width: 760px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.125rem;
+  color: #a1a1aa;
+  line-height: 2;
+  font-weight: 400;
+}
+/*******************
+ ###**Header 
+ ******************/
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  border-radius: 50%;
+  animation: fadeIn 1s;
+}
+.border_radius{
+  animation: fadeIn 2s;
+}
+/*******************
+ ###**Card 
+ ******************/
+ .border {
+  padding-top: 4px;
+  border-radius: 15px 15px 20px 20px;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50%,
+    #e2d45c 100%
+  );
+}
+.border_radius {
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  background-image: linear-gradient(to right, #9572fc, #43e7ad, #e2d45c);
+  border-radius: 50%;
+}
+main section:nth-child(even){
+  margin: 2.5rem 0;
+}
+main section:nth-last-child(1) {
+  margin-bottom: 5%;
+}
+.games,
+.anime,
+.manga {
+  background-color: #2a2634;
+  padding: 2rem 2.5rem;
+  border-radius: 10px 10px 15px 15px;
+}
+
+ul.all-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+ul.all-list {
+  padding-top: 1.5rem;
+}
+ul.all-list img {
+  border-radius: 12px;
+  width: 120px;
+  height: auto;
+}
+.all-list img{
+  transition: 0.4s;
+}
+.all-list img:hover{
+transform: scale(1.1);
+}
+/*******************
+ ###**Animação 
+ ******************/
+ @keyframes fadeIn {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
